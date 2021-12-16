@@ -1,0 +1,5 @@
+import email_repository
+import message_repository
+
+email_repository = email_repository.EmailRepository
+message_repository = message_repository.MessageRepository
