@@ -11,6 +11,7 @@ def foo():
 
 
 if __name__ == '__main__':
+    repository.init()
     mailer.init(repository.email)
 
     bar()

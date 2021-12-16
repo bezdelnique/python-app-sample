@@ -1,3 +1,14 @@
+email = None
+message = None
+
+
+def init() -> None:
+    global email, message
+    sqlite_connect = SqliteConnect()
+    email = Email(sqlite_connect)
+    message = Message(sqlite_connect)
+
+
 class SqliteConnect:
     def __init__(self):
         pass
@@ -20,8 +31,3 @@ class Message:
 
     def find(self):
         pass
-
-
-sqlite_connect = SqliteConnect()
-email = Email(sqlite_connect)
-message = Message(sqlite_connect)
