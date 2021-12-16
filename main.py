@@ -1,4 +1,5 @@
 import repository
+import mailer
 
 
 def bar():
@@ -10,5 +11,7 @@ def foo():
 
 
 if __name__ == '__main__':
+    mailer.init(repository.email)
+
     bar()
     foo()
