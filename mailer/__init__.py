@@ -1,7 +1,9 @@
+import repository
+
 email_repository_ = None
 
 
-def init(email_repository):
+def init(email_repository: repository.Email) -> None:
     email_repository_ = email_repository
 
 

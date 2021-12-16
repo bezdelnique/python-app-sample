@@ -1,5 +1,13 @@
+class SqliteConnect:
+    def __init__(self):
+        pass
+
+    def find(self):
+        pass
+
+
 class Email:
-    def __init__(self, connect):
+    def __init__(self, connect: SqliteConnect):
         self.connect = connect
 
     def find(self):
@@ -7,16 +15,8 @@ class Email:
 
 
 class Message:
-    def __init__(self, connect):
+    def __init__(self, connect: SqliteConnect):
         self.connect = connect
-
-    def find(self):
-        pass
-
-
-class SqliteConnect:
-    def __init__(self):
-        pass
 
     def find(self):
         pass
