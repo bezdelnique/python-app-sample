@@ -4,6 +4,7 @@ email_repository_ = None
 
 
 def init(email_repository: repository.Email) -> None:
+    global email_repository_
     email_repository_ = email_repository
 
 
