@@ -1,5 +1,27 @@
-import email_repository
-import message_repository
+class Email:
+    def __init__(self, connect):
+        self.connect = connect
 
-email_repository = email_repository.EmailRepository
-message_repository = message_repository.MessageRepository
+    def find(self):
+        pass
+
+
+class Message:
+    def __init__(self, connect):
+        self.connect = connect
+
+    def find(self):
+        pass
+
+
+class SqliteConnect:
+    def __init__(self):
+        pass
+
+    def find(self):
+        pass
+
+
+sqlite_connect = SqliteConnect()
+email = Email(sqlite_connect)
+message = Message(sqlite_connect)

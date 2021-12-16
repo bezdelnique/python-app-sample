@@ -2,11 +2,11 @@ import repository
 
 
 def bar():
-    repository.message_repository.find()
+    repository.message.find()
 
 
 def foo():
-    repository.message_repository.find()
+    repository.email.find()
 
 
 if __name__ == '__main__':
